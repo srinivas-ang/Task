@@ -1,0 +1,72 @@
+
+
+<div id="main" *ngFor="let data of data1;let l=index">
+  <div *ngIf="l!=0">
+  <div *ngFor="let item of data; let i=index" >
+      <div id="test" *ngIf="isEven(i,'top')">
+          <ul style="clear: both;transform: rotate(-140deg);border:none;margin-top: -56px; " class="ulT">
+              <li class="first"></li>
+              <p>{{ item.title }}</p>
+              <li *ngFor="let cause of item.data;let j=index" class="topli{{j}}">
+                  <div style="width: 82%;">
+                      <div style="float: left;width: 99%;">{{ cause.cause }}</div>
+                      <div class="oneTTop" style="float: left;width: 100%;margin-top: -8%"
+                          *ngIf="cause.isActualCause == 'N'"></div>
+                      <div class="oneTSTop" style="float: left;width: 100%;margin-top: -8%"
+                          *ngIf="cause.isActualCause == 'Y'"></div>
+                  </div>
+              </li>
+
+
+              <li style="width: 304px;border: none;height: 35px;
+  padding-top: 10px;"><a class="button" href="#popup1">View All</a></li>
+          </ul>
+      </div>
+  </div>
+  <hr style="margin-top: -58px;" />
+  <div *ngFor="let item of data; let i=index">
+      <div id="test2" *ngIf="!isEven(i,'bottom')" [ngClass]="{'test2Odd': isBottomContentOdd}">
+          <ul style="clear: both;padding:0px;margin-top: -66px;transform: rotate(-36deg);" class="ulD">
+              <li *ngFor="let cause of item.data ; let j=index" class="bottomli{{j}}">
+                  <div style="width: 100%;">
+                      <div style="float: left;width: 99%;">{{ cause.cause }}</div>
+                      <div class="oneTBottom" style="float: left;width: 100%;margin-top: -5%" *ngIf="cause.isActualCause == 'N'"></div>
+                      <div class="oneTSBottom" style="float: left;width: 100%;margin-top: -5%" *ngIf="cause.isActualCause == 'Y'"></div>
+                  </div>
+              </li>
+
+              <li style="width: 154px;border: none;">
+                  <a class="button" href="#popup1">View All</a>
+              </li>
+              <li class="last"></li>
+              <p>{{ item.title }}</p>
+          </ul>
+      </div>
+  </div>
+</div>
+  <div class="centerMain2" *ngIf="l==data1.length-1" style="margin-left:397px">
+      <div class="hexagon"></div>
+      <div class="text">
+          <p class="p1">{{data1[0][0].header}}</p>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="popup1" class="overlay">
+  <div class="popup">
+      <h2>Here i am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
+          assumenda recusandae odit non officiis quod inventore consequuntur eius
+          nulla, blanditiis iusto totam consectetur veniam alias voluptate molestias
+          explicabo. Nulla, cum!
+      </div>
+  </div>
+</div>

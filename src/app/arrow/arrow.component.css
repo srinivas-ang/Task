@@ -1,0 +1,416 @@
+/* div#test {
+    width: 2px;
+    height: 400px;
+    border-right: 2px solid gray;
+    transform: rotate(135deg);
+    margin-left: 310px;
+  }
+  
+  div#test2 {
+    width: 2px;
+    height: 400px;
+    border-right: 2px solid gray;
+    transform: rotate(45deg);
+    margin-left: 310px;
+    margin-top: -70px;
+  }
+  
+  div#main {
+    width: 460px;
+    float: left;
+  } */
+
+  div#test {
+    width: 2px;
+    height: 250px;
+    border-right: 2px solid gray;
+    transform: rotate(140deg);
+    margin-left: 307px;
+}
+
+div#test2 {
+    width: 2px;
+    height: 250px;
+    border-right: 2px solid gray;
+    transform: rotate(36deg);
+    margin-left: 313px;
+    margin-top: -34px;
+}
+ 
+
+div#main {
+    width: 392px;
+    float: left;
+}
+
+
+  
+  ul::after{
+    border-right: 2px solid grey;
+    transform: rotate(150deg)
+  }
+  
+  
+  
+  li.topli0 {
+    width: 247px;
+    height: 46px;
+    margin-left: -45px;
+  }
+  li.topli1 {
+    width: 292px;
+    height: 46px;
+    margin-left: -48px;
+}
+li.topli2 {
+    width: 330px;
+    height: 46px;
+    margin-left: -48px;
+}
+li.bottomli2 {
+    width: 263px;
+    margin-left: -12px;
+    height: 46px;
+}
+
+li.bottomli1 {
+    width: 298px;
+    margin-left: -15px;
+    height: 46px;
+}
+li.bottomli0 {
+    width: 330px;
+    margin-left: -14px;
+    height: 46px;
+}
+  
+  .ulT li,
+  .ulT2 li,
+  .ulT3 li {
+    border-bottom: 2px solid gray;
+  }
+  
+  .ulT p,
+  .ulT2 p,
+  .ulT3 p {
+    position: absolute;
+    top: 2px;
+    left: 80px;
+    color: white;
+  }
+  
+  li {
+    width: 150px;
+    height: 50px;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    position: absolute;
+    left: -102px;
+    top: 150px;
+    /* left: 36px;
+    top: 50px; */
+  }
+  
+  ul.ul2 {
+    left: 520px;
+  }
+  
+  ul.ul3 {
+    left: 940px;
+  }
+  
+  ul.ul4 {
+    top: 308px;
+  }
+  
+  ul.ul5 {
+    top: 308px;
+    left: 521px;
+  }
+  
+  ul.ul6 {
+    top: 308px;
+    left: 941px;
+  }
+
+  ul.ulD {
+    margin-left: -137px;
+}
+  
+  .ulD li,
+  .ulD2 li,
+  .ulD3 li {
+    border-bottom: 2px solid gray;
+  }
+  
+  li.first,
+  .last {
+    background: gray;
+    color: white;
+    border-top: 2px solid gray !important;
+    border-bottom: 2px solid gray !important;
+  }
+  
+  /* li.first {
+    transform: skew(45deg);
+    margin-left: 23px;
+  } */
+  li.first {
+      width:180px;
+    transform: skew(40deg);
+    margin-left: -32px;
+  }
+  
+  li.last {
+    transform: skew(-36deg);
+    margin-left: 1px;
+    width: 193px;
+    
+  }
+  
+  .ulD p,
+  .ulD2 p,
+  .ulD3 p {
+    margin: 0;
+    position: absolute;
+    bottom: 14px;
+    color: white;
+    left: 87px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg)
+      no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #06d85f;
+    margin: 80px 0;
+  }
+  
+  .box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: rgb(82, 105, 238);
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .popup .close:hover {
+    color: #06d85f;
+  }
+  
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .box {
+      width: 70%;
+    }
+    .popup {
+      width: 70%;
+    }
+  }
+  
+  .oneTBottom,
+  .oneTSBottom {
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    border-style: solid;
+    border-width: 6px 10px 6px 0;
+    border-color: transparent #d1631a transparent transparent;
+  }
+  
+  .oneTSBottom {
+    border-color: transparent green transparent transparent;
+  }
+  .oneTTop,
+  .oneTSTop {
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 6px 10px 6px 0;
+    border-color: transparent #d1631a transparent transparent;
+  }
+  
+  .oneTSTop {
+    border-color: transparent green transparent transparent;
+  }
+  
+
+  .p1{
+    text-align: center;
+    font-family: Tahoma, Arai,sans-serif;
+    color: white;
+    margin: -224px 0;
+    
+    }
+/*     
+    .hexagon
+    {
+    position: relative;
+    width: 125px;
+    height: 72.17px;
+    background-color: grey; 
+    margin: 171.08px 0;
+    transform: rotate(30deg);
+     }
+    
+    .hexagon:before,.hexagon:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 62.5px solid transparent;
+    border-right: 62.5px solid transparent;  
+    }
+    
+    .hexagon:before{
+    bottom: 100%;
+    border-bottom: 36.08px solid grey;
+    }
+    
+    .hexagon:after{
+    top: 100%;
+    width: 0;
+    border-top: 36.08px solid grey;  
+    } */
+    
+    .centerMain2{
+        height: 1277px;
+    position: absolute;
+    top: 90.5%;
+    bottom: 0;
+    margin: auto;
+    }
+    
+    
+
+  
+  
+      
+
+     
+  hr{
+    margin-top: -28px !important;
+  }
+  
+  
+  
+  
+.text{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hexagon{
+  position: relative;
+  width: 125px;
+  height: 72.17px;
+  background-color: grey; 
+  margin: 171.08px 0;
+  transform: rotate(30deg);
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 62.5px solid transparent;
+  border-right: 62.5px solid transparent;  
+  }
+  
+  .hexagon:before{
+  bottom: 100%;
+  border-bottom: 36.08px solid grey;
+  }
+  
+  .hexagon:after{
+  top: 100%;
+  width: 0;
+  border-top: 36.08px solid grey;  
+  }
+  
+
+  
+  /* .centerMain2{
+  height: 829px;
+  position: absolute;
+  top: 90.5%;
+  bottom:0;
+  left: 975px;
+  margin: auto;
+  } */
